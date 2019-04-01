@@ -1,1 +1,1 @@
-# Proeject WEB - github_pages
+# Project WEB - github_pages
