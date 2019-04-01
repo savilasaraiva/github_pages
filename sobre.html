@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza</title>
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="img-sobre">
+      <div class="navbar-inicial">
+        <img class="bloco-img" src="img/logo_pizza_03.png" alt="logo_pizza">
+        <div class="navbar">
+          <a id="inicio" href="index.html">Início</a>
+          <a id="menu" href="menu.html">Menu</a>
+          <a id="servico" href="servicos.html">Serviços</a>
+          <a id="sobre" href="sobre.html">Sobre</a>
+        </div>
+      </div>
+      <div class="header">
+        <h1>Sobre</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-s-12">
+        <div class="col-12 col-s-12 card">
+          <h1>Nossa História</h1>
+          <div class="col-6 col-s-12">
+            <h4>61 anos de história</h4>
+            <img src="./img/about.jpg" alt="A Mágica" width="80%" />
+          </div>
+          <div class="col-6 col-s-12">
+            <p class="about-text">
+              Família unida na metrópole, logo começou a preparar suas receitas. Inicialmente em pequenas instalações,
+              para um pequeno
+              público. No cardápio enxuto estava o jeito napolitano de se fazer pizza e, com a tradição napolitana,
+              criar novidades na
+              gastronomia paulistana, que se tornaram verdadeiros clássicos: Pizza Margherita, Pizza Napoletana, Calzone
+              (pizza
+              fechada), Tortano (o genuíno pão de linguiça napolitano) e a Pastiera di Grano em receita exclusiva da
+              família, do jeito
+              que se faz na região de Nápoles.
+            </p>
+            <p class="about-text">
+              Assim a pizzaria foi crescendo, ganhando a admiração dos paulistanos e tornando-se referência absoluta da
+              boa e autêntica gastronomia
+              napolitana na cidade, ícone de pizza com identidade.
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-s-12">
+          <h1 class="contact-text">Entre em contato</h1>
+          <div class=" col-12 col-s-12 card-4">
+            <div class=" col-4 col-s-12 aside">
+              <form action="">
+                <h2>Enviar Mensagem</h2>
+                Nome:<br />
+                <input type="text" name="nome" value="" placeholder="Ex: Dona Maria" /><br />
+                Email:<br />
+                <input type="text" name="email" value="" placeholder="Ex: maria@email.com" /><br />
+                Endereço:<br />
+                <input type="text" name="endereco" value="" placeholder="Ex: Rua Nº 0" /><br />
+                Telefone:<br />
+                <input type="text" name="telefone" placeholder="(12)33497-5695" value="" /><br />
+                Sexo:<br />
+                <input type="radio" name="genero" value="masculino" checked />
+                Masculino
+                <input type="radio" name="genero" value="feminino" />
+                Feminino
+                <input type="radio" name="genero" value="outro" /> Outro<br /><br />
+                Mensagem:<br />
+                <textarea rows="4" cols="50"></textarea>
+                <br />
+                <input class="btn success" type="submit" value="Enviar" />
+                <input class="btn danger" type="reset" value="Limpar" />
+              </form>
+            </div>
+            <div class=" col-8 col-s-12 ">
+              <img src="./img/gallery-3.jpg" alt="Pizzaria" width="70%" />
+              <img src="./img/pizzaria_00.png" alt="Pizzaria" width="70%" />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-s-12 info-card">
+          <div class="col-9 col-s-12 card-1">
+            <h4>
+              <span>(88) 98654-6454</span>
+              <span>Avenida Vale das Pedras</span>
+            </h4>
+          </div>
+          <div class="col-3 col-s-12 card-2">
+            <ul id="social">
+              <li><a href="#"><img id="social-media" src="img/icon_01.png"></a></li>
+              <li><a href="#"><img id="social-media" src="img/icon_02.png"></a></li>
+              <li><a href="#"><img id="social-media" src="img/icon_03.png"></a></li>
+              <li><a href="#"><img id="social-media" src="img/icon_03_1.png"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="smoothscroll-top">
+      <span class="scroll-top-inner">
+        <i class="icon-arrow"><img src="img/arrow_01.png" width="80%"></i>
+      </span>
+    </div>
+
+    <div class="footer">
+      <p>
+        <a href="#">Copyright © 2019 Todos os direitos reservados | Este modelo é feito por Sávila Saraiva</a>
+      </p>
+    </div>
+  </body>
+  <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript">
+    $(".navbar a").removeClass("selected");
+    $("#sobre").addClass("selected");
+  </script>
+
+</html>

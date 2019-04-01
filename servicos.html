@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza</title>
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="img-servico">
+      <div class="navbar-inicial">
+        <img class="bloco-img" src="img/logo_pizza_03.png" alt="logo_pizza">
+        <div class="navbar">
+          <a id="inicio" href="index.html">Início</a>
+          <a id="menu" href="menu.html">Menu</a>
+          <a id="servico" href="servicos.html">Serviços</a>
+          <a id="sobre" href="sobre.html">Sobre</a>
+        </div>
+      </div>
+      <div class="header">
+        <h1>Serviços</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-s-12">
+        <div class="col-12 col-s-12 card-2">
+          <h1>Delivery</h1>
+          <div class="col-4 col-s-12">
+            <h4>Entrega mais rápida</h4>
+            <img src="./img/icon_07.png" width="20%" />
+          </div>
+          <div class="col-4 col-s-12">
+            <h4>Comidas Saudáveis</h4>
+            <img src="./img/icon_05.png" width="20%" />
+          </div>
+          <div class="col-4 col-s-12">
+            <h4>Receitas Originais</h4>
+            <img src="./img/icon_04.png" width="20%" />
+          </div>
+        </div>
+        <div class="col-12 col-s-12 card">
+          <h1>Finalizar Pedido</h1>
+          <div class="col-8 col-s-12 card">
+            <h3>Meus Pedidos</h3>
+            <table>
+              <tr>
+                <th>ID</th>
+                <th>Descrição</th>
+                <th>QTD</th>
+                <th>Valor Total</th>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Pizza Portuguesa</td>
+                <td>2</td>
+                <td>R$ 30,00</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Suco de Abacaxi</td>
+                <td>4</td>
+                <td>R$ 51,60</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>Ambúrguer de Carne</td>
+                <td>1</td>
+                <td>R$ 13,70</td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td>Macarrão ao Molho de Tomate</td>
+                <td>1</td>
+                <td>R$ 20,00</td>
+              </tr>
+              <tr>
+                <td colspan="3">TOTAL</td>
+                <td>R$ 115,30</td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-4 col-s-12 card">
+            <h3>Efetue login para finalizar o pedido</h3>
+            <form action="#">
+              <input type="text" name="username" placeholder="Usuário" required />
+              <input type="password" name="password" placeholder="Senha" required />
+              <input class="btn success" type="submit" value="Login" />
+              <input class="btn danger" type="reset" value="Limpar" />
+              <h3>ou</h3>
+            </form>
+            <input class="btn info" type="submit" value="Cadastre-se">
+          </div>
+          <button class="btn confirm disabled" disabled>Finalizar Pedido</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="smoothscroll-top">
+      <span class="scroll-top-inner">
+        <i class="icon-arrow"><img src="img/arrow_01.png" width="80%"></i>
+      </span>
+    </div>
+
+    <div class="footer">
+      <p>
+        <a href="#">Copyright © 2019 Todos os direitos reservados | Este modelo é feito por Sávila Saraiva</a>
+      </p>
+    </div>
+  </body>
+  <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript">
+    $(".navbar a").removeClass("selected");
+    $("#servico").addClass("selected");
+  </script>
+
+</html>
