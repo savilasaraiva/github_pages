@@ -1,0 +1,672 @@
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+/* Fontes */
+@font-face {
+  font-family: TopoPageLink;
+  src: url(../css/fonts/Atma-SemiBold.ttf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: HeaderPage;
+  src: url(../css/fonts/212\ Moon\ Child\ Sans.otf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: TopoPageBold;
+  src: url(../css/fonts/Atma-Bold.ttf);
+  font-weight: 900;
+}
+
+body, html {
+  font-family: 'Century Gothic';
+  background-image: url(../img/wallpaper_01.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  margin: 0;
+}
+
+/* Navbar Topo */
+
+main {
+  width: 70%
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.navbartop {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.navbar{
+  background: #5252528a;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  align-content: stretch;
+}
+
+.navbartop a {
+  color: black;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 200%;
+  text-align: center;
+  font-family: TopoPageLink;
+  border-bottom: 3px solid transparent;
+}
+
+.navbartop a:hover, ul .selected{
+  color: rgb(255, 174, 41);
+  text-shadow: 0 0 3px rgb(0, 0, 0);
+  /*border-bottom: 3px solid red;*/
+}
+
+.text-shadow-drop-center:hover {
+	-webkit-animation: text-shadow-drop-center 0.6s both;
+	animation: text-shadow-drop-center 0.6s both;
+}
+
+@-webkit-keyframes text-shadow-drop-center {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  }
+}
+@keyframes text-shadow-drop-center {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  }
+}
+
+.blink-2:hover {
+	-webkit-animation: blink-2 0.9s ease-in-out both;
+	animation: blink-2 0.9s ease-in-out both;
+}
+
+@-webkit-keyframes blink-2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink-2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.logo_mex {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#img-inicio {
+  background: url(../img/pizzeria_web_09.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60%;
+}
+
+#img-menu {
+  background: url(../img/pizzeria_web_078.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60%;
+}
+
+#img-servico {
+  background: url(../img/pizzeria_web_01.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60%;
+}
+
+#img-sobre {
+  background: url(../img/pizzeria_web_07.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60%;
+}
+
+.header {
+  color: white;
+  width: 100%;
+  margin: 0; 
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header h1 {
+  font-size: 60px;
+  text-align: center;
+  font-family: TopoPageBold;
+}
+
+/* Slide de Imagens */
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  vertical-align: middle;
+}
+
+.navSlides{
+  text-align: center;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  min-width: 85%;
+  position: relative;
+  margin: 0;
+}
+
+/* Texto do Slide */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Número de Slide (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Indicadores do Slide */
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: rgb(139, 139, 139);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #414141;
+}
+
+/* Animação do Slide */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Texto Responsivo do Slide */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* Buttons, Tables, Imagens e Textos */
+
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.btn{
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.danger{
+  background-color: #af4c4c;
+}
+
+.success{
+  background-color: #45a045;
+}
+
+.info{
+  background-color: #3b57b4;
+  width: 100%;
+}
+
+.disabled{
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.danger:hover {
+  background-color: #c56363;
+}
+
+.success:hover {
+  background-color: #5dc25a;
+}
+
+.info:hover {
+  background-color: #5883d3;
+}
+
+/* Botões */
+.button{
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Verde */
+.confirm {
+  border-color: #4CAF50;
+  color: green;
+}
+
+.confirm:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Button - Topo Barra de Rolagem */
+.smoothscroll-top {
+position:fixed;
+opacity:0;
+visibility:hidden;
+overflow:hidden;
+text-align:center;
+z-index:99;
+background-color:#fa6915;
+color:#fff;
+width:53px;
+height:50px;
+line-height:44px;
+right:25px;
+bottom:-25px;
+padding-top:2px;
+border-radius:5px;
+transition:all .5s ease-in-out;
+transition-delay:.2s;
+}
+
+.smoothscroll-top:hover {
+background-color:#ff3c00;
+color:#fff;
+transition:all .2s ease-in-out;
+transition-delay:0;
+}
+
+.smoothscroll-top.show {
+visibility:visible;
+cursor:pointer;
+opacity:1;
+bottom:25px;
+}
+
+.smoothscroll-top i.fa {
+line-height:inherit;
+}
+
+.bloco-img{
+  width: 15%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+  color: black;
+}
+
+dl,
+.descP {
+  text-align: justify;
+}
+
+.about-text{
+  text-align: justify;
+  font-size: 130%;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Cards*/
+.card {
+  background-color: #464646;
+  padding: 20px;
+  margin-bottom: 15px;
+  color: white;
+  text-align: center;
+}
+
+.card-1 {
+  background-color: #000000;
+  padding: 20px;
+  color: #ffffff;
+  margin-bottom: 15px;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.card-1 span{
+  padding: 10px;
+}
+
+.card-2 {
+  background-color: rgb(255, 174, 41);
+  padding: 20px;
+  color: black;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.card-3 {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-align: center;
+  height: auto;
+}
+
+.card h3{
+  text-align: justify;
+  padding: 20px;
+  text-indent: 1.6em;
+  font-size: 140%;
+  vertical-align: center;
+}
+
+.card-4{
+  background-image: url(../img/bg_3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: stretch;
+  margin-top: 10px;
+}
+
+.card-5 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card-5 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card-5 button:hover {
+  opacity: 0.7;
+}
+
+.card-6{
+  background-color: #00000091;
+  padding: 0;
+  color: #ffffff;
+  margin-bottom: 15px;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 150%;
+  font-family: HeaderPage;
+}
+
+.contact-text{
+  padding: 20px;
+  margin-bottom: 15px;
+  color: white;
+  background: rgb(255, 174, 41);
+  text-align: center;
+}
+
+.info-card{
+  display: flex;
+}
+
+#social-media{
+  width: 80%;
+  height: auto;
+}
+
+#social{
+  list-style:none;
+  padding:0px;
+  margin:5px;
+  display: inline-flex;
+}
+
+#social ul li {
+  display: inline;
+}
+
+.aside {
+  display: flex;
+  background-color: rgba(255, 159, 67,1.0);
+  padding: 20px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* Rodapé */
+.footer {
+  background-color: rgb(36, 146, 209);
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+.footer a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Layout Responsivo */
+@media screen and (max-width: 700px) {
+  .navbartop {
+    flex-direction: column;
+  }
+}
+
+/* Para mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* Para tablets: */
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* Para desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
