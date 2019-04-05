@@ -61,7 +61,7 @@ ul {
 }
 
 .navbar{
-  background: #5252528a;
+  background-color: rgba(125, 46, 108, 0.945);
   align-items: center;
   justify-content: space-evenly;
   display: flex;
@@ -428,6 +428,7 @@ img {
   margin-bottom: 15px;
   color: white;
   text-align: center;
+  display: flex;
 }
 
 .card-1 {
@@ -444,11 +445,20 @@ img {
 }
 
 .card-2 {
-  background-color: rgb(255, 174, 41);
+  background-color: rgb(209, 42, 53);
   padding: 20px;
   color: black;
   margin-bottom: 15px;
   text-align: center;
+}
+
+.card-2 h1{
+  color: white;
+  text-align: center;
+  padding: 5px;
+  margin: 0;
+  font-size: 220%; 
+  font-family: HeaderPage;
 }
 
 .card-3 {
@@ -460,16 +470,8 @@ img {
   height: auto;
 }
 
-.card h3{
-  text-align: justify;
-  padding: 20px;
-  text-indent: 1.6em;
-  font-size: 140%;
-  vertical-align: center;
-}
-
 .card-4{
-  background-image: url(../img/bg_3.jpg);
+  background-image: url(../img/colors_mexico_01.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -477,23 +479,34 @@ img {
   height: 100%;
   margin: 0;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
   align-content: stretch;
+  align-items: stretch;
+  align-content: stretch;
+  justify-content: space-around;
+  flex-flow: row wrap;
   margin-top: 10px;
 }
 
 .card-5 {
+  flex: 1;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
-  margin: auto;
+  min-width: 180px;
   text-align: center;
-  font-family: arial;
+  margin: 10px;
 }
 
 .price {
-  color: grey;
+  color: rgb(0, 0, 0);
   font-size: 22px;
+  text-align: center;
+}
+
+.card-5 .descript{
+  font-size: 80%;
+  vertical-align: center;
+  text-align: justify;
+  padding: 20px;
 }
 
 .card-5 button {
@@ -510,6 +523,43 @@ img {
 
 .card-5 button:hover {
   opacity: 0.7;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 .card-6{
@@ -565,7 +615,8 @@ img {
 
 /* Rodapé */
 .footer {
-  background-color: rgb(36, 146, 209);
+  /*background-color: rgb(36, 146, 209);*/
+  background-color: rgba(125, 46, 108, 0.945);
   color: #ffffff;
   text-align: center;
   font-size: 12px;
