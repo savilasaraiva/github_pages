@@ -409,7 +409,7 @@ thead tr:hover {
   height: 80px;
 }
 .img-card-01 {
-  background-image: url(../img/img_03.jpg);
+  background-image: url(../img/img_01.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -418,7 +418,7 @@ thead tr:hover {
   min-height: 182px;
 }
 .img-card-02 {
-  background-image: url(../img/img_04.jpg);
+  background-image: url(../img/img_05.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -427,7 +427,7 @@ thead tr:hover {
   min-height: 182px;
 }
 .img-card-03 {
-  background-image: url(../img/img_05.jpg);
+  background-image: url(../img/img_06.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
