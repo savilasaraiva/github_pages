@@ -274,14 +274,22 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2em;
   margin-bottom: 1.5rem;
 }
-h1 {
-  font-size: 2rem;
+
+h1{  
+  font-size: 3rem;
   text-align: center;
 }
+
 h2 {
   font-size: 1.25rem;
   margin-bottom: .5rem;
 }
+
+#textSlide {
+  text-align: center;
+  color: #914A91;
+}
+
 a {
   color: #ecdede;
   text-decoration: none;
