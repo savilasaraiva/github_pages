@@ -28,30 +28,46 @@ section {
 }
 
 .footer{
-  background-color: rgba(108, 80, 131, 0.8);
+  background-color: #EEA047;
   color: white;
   padding: 10px;
   text-align: center;
+  margin-top: 60px;
 }
 
 .container{
   background-color: #ffffff;
-  margin-bottom: 30px;
+  margin: 36px 0px 36px 0px;
+  padding: 40px 0px 40px 0px;
   text-align: center;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
-
+.container-top{
+  background-color: #ffffff;
+  margin-top: 0;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+.container-bottom{
+  background-color: #ffffff;
+  margin-bottom: 0;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
 .cnt-1 {  
   display: -webkit-flex;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-flow: row wrap;
 }
 
 .ctn-2 {
   display: -webkit-flex;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
 .row {
@@ -61,7 +77,9 @@ section {
 
 .column {
   padding: 10px;
+  margin: 0;
   height: auto;
+  width: 100%;
 }
 
 .column.side {
@@ -285,9 +303,34 @@ h2 {
   margin-bottom: .5rem;
 }
 
+#legendaDelivery {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #000000;
+  border-color: #707070;
+  margin: 6.8rem;
+}
+
+#imgDelivery{
+  margin-top: 6.8rem;
+}
+
 #textSlide {
   text-align: center;
   color: #914A91;
+  padding-bottom: 1.5rem;
+}
+
+.titleMenu {
+  text-align: center;
+  color: #E34D4C;
+  font-size: 2.5rem;
+}
+
+.titleMenu2 {
+  text-align: center;
+  color: #EEA047;
+  font-size: 2.5rem;
 }
 
 a {
@@ -318,12 +361,10 @@ td {
   text-align: left;
   border-bottom: 1px solid rgb(255, 255, 255);
 }
-
 tbody tr:hover {
   background-color: #ffffff83;
   color: black;
 }
-
 thead th,
 td {
   padding: 8px;
@@ -333,6 +374,137 @@ td {
 thead tr:hover {
   background-color: #ffffff2c;
   color: black;
+}
+
+/* Galeria de Pratos */
+.gallery-photos{
+  justify-content: space-between;
+  margin: 10px;
+}
+.card-gallery-2 {
+  background-color: white;
+  width: 380px;
+  height: 500px;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.titleMenu3 {
+  text-align: center;
+  color: #EEA047;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.descript-3{
+  margin: 40px 20px 0px 20px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  height: 80px;
+}
+.img-card-01 {
+  background-image: url(../img/img_03.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 8px;
+  width: 332px;
+  min-height: 182px;
+}
+.img-card-02 {
+  background-image: url(../img/img_04.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 8px;
+  width: 332px;
+  min-height: 182px;
+}
+.img-card-03 {
+  background-image: url(../img/img_05.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 8px;
+  width: 332px;
+  min-height: 182px;
+}
+.card-gallery {
+  flex: 1;
+  max-width: 240px;
+  min-width: 240px;
+  text-align: center;
+  margin: 10px;
+}
+.card-gallery img{
+  margin: 0;
+  padding: 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+.img-over{
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 304px;
+  width: 240px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ffffff;
+}
+.img-over:hover .overlay {
+  opacity: 1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.price {
+  color: rgb(0, 0, 0);
+  font-size: 28px;
+  text-align: center;
+  margin: 15px;
+}
+.name{
+  text-align: center;
+  color: #E34D4C;
+  font-size: 1.2rem;
+  margin: 0;
+}
+.card-gallery .descript{
+  margin: 2px 8px 2px 8px;
+  vertical-align: center;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+}
+.card-gallery button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card-gallery button:hover {
+  opacity: 0.7;
 }
 
 /* Reponsive */
