@@ -37,11 +37,15 @@ section {
 .social-media{
   position: relative;
   display: flex;
+  justify-content: center;
 }
 .icon-social-media {
   width: 30px;
   height: 30px;
   margin: 10px;
+}
+a.rc{
+  margin: 20px;
 }
 .icon-social-media.face {
   background-image: url(../img/icon_face.png);
@@ -55,6 +59,21 @@ section {
 }
 .icon-social-media.twitter {
   background-image: url(../img/icon_twitter.png);
+  background-position: center center;
+  background-size: 100%;
+}
+.icon-social-media.face-rose {
+  background-image: url(../img/icon_face_c.png);
+  background-position: center center;
+  background-size: 100%;
+}
+.icon-social-media.insta-rose{
+  background-image: url(../img/icon_insta_c.png);
+  background-position: center center;
+  background-size: 100%;
+}
+.icon-social-media.twitter-rose {
+  background-image: url(../img/icon_twitter_c.png);
   background-position: center center;
   background-size: 100%;
 }
@@ -220,6 +239,14 @@ textarea {
   border-radius: 4px;
   margin-top: 6px;
   margin-bottom: 6px;
+  width: 100%;
+}
+.form{
+  margin: 20px;
+}
+.group-btn{
+  display: flex;
+  justify-content: space-around;
 }
 .sm{
   flex: 1 1 auto;
@@ -233,52 +260,28 @@ textarea {
   flex: 1 1 auto;
   width: 200px;
 }
-.form-inline {  
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  padding: 1.5rem 2rem;
-  background-color: white;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-}
-.form-inline label {
-  margin: 5px 10px 5px 0;
-}
-.form-inline input {
-  vertical-align: middle;
-  margin: 5px 10px 5px 0;
-  padding: 10px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-}
-.form-inline button {
-  padding: 10px 20px;
-  background-color: dodgerblue;
-  border: 1px solid #ddd;
-  color: white;
-  cursor: pointer;
-}
-.form-inline button:hover {
-  background-color: royalblue;
-}
 .btn{
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
   cursor: pointer;
   text-align: center;
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  font-size: 18px;
+  padding: 5px 20px 6px 20px;
+  text-decoration: none;
+  background: transparent;
 }
 .danger{
-  background-color: #af4c4c;
+  border: solid #af4c4c 2px;
+  color: #af4c4c;
 }
 .success{
-  background-color: #45a045;
+  border: solid #45a045 2px;
+  color: #45a045;
 }
 .info{
-  background-color: #3b57b4;
+  border: solid #3b57b4 2px;
+  color: #3b57b4;
   width: 100%;
 }
 .disabled{
@@ -287,12 +290,15 @@ textarea {
 }
 .danger:hover {
   background-color: #c56363;
+  color: white;
 }
 .success:hover {
   background-color: #5dc25a;
+  color: white;
 }
 .info:hover {
   background-color: #5883d3;
+  color: white;
 }
 .button{
   border: 2px solid black;
@@ -371,6 +377,12 @@ h2 {
   font-size: 1.5rem;
   padding: 20px;
   margin: 0;
+}
+.title-sm-1{
+  font-size: 1.2rem;
+  padding: 20px;
+  margin: 20px;
+  max-width: 500px;
 }
 #legendaDelivery {
   text-align: center;
