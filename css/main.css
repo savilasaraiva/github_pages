@@ -422,6 +422,7 @@ thead tr:hover {
 .tab{
   display: flex;
   justify-content: space-around;
+  margin-bottom: 28px;
 }
 .tablinks{
   color: #000000;
