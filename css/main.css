@@ -38,6 +38,7 @@ section {
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .icon-social-media {
   width: 30px;
@@ -740,5 +741,10 @@ div.accordion{
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 40px;
+  }
+  .social-media{
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
   }
 }
