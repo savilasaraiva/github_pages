@@ -120,10 +120,65 @@
         perspective: 200px;
     margin: 0px;
   }
+  .icon-cards__content{
+    -webkit-transform: translateZ(-200px) rotateY(0);
+      transform: translateZ(-200px) rotateY(0);
+  }
   .icon-cards__item {
     width: 100%;
     height: 300px;
+    border-radius: none;
+    border: none;
     background-repeat: no-repeat;
     margin: 0px;
+  }
+  .icon-cards__item:nth-child(1) {
+    -webkit-transform: rotateY(0) translateZ(200px);
+            transform: rotateY(0) translateZ(200px);
+  }
+  .icon-cards__item:nth-child(2) {
+    -webkit-transform: rotateY(120deg) translateZ(200px);
+            transform: rotateY(120deg) translateZ(200px);
+  }
+  .icon-cards__item:nth-child(3) {
+    -webkit-transform: rotateY(240deg) translateZ(200px);
+            transform: rotateY(240deg) translateZ(200px);
+  }
+
+  @-webkit-keyframes carousel {
+    0%,  17.5% {
+      -webkit-transform: translateZ(-200px) rotateY(0);
+              transform: translateZ(-200px) rotateY(0);
+    }
+    27.5%, 45% {
+      -webkit-transform: translateZ(-200px) rotateY(-120deg);
+              transform: translateZ(-200px) rotateY(-120deg);
+    }
+    55%, 72.5% {
+      -webkit-transform: translateZ(-200px) rotateY(-240deg);
+              transform: translateZ(-1000px) rotateY(-240deg);
+    }
+    82.5%, 100% {
+      -webkit-transform: translateZ(-200px) rotateY(-360deg);
+              transform: translateZ(-200px) rotateY(-360deg);
+    }
+  }
+  @keyframes carousel {
+    0%,  17.5% {
+      -webkit-transform: translateZ(-200px) rotateY(0);
+              transform: translateZ(-200px) rotateY(0);
+    }
+    27.5%, 45% {
+      -webkit-transform: translateZ(-200px) rotateY(-120deg);
+              transform: translateZ(-200px) rotateY(-120deg);
+    }
+    55%, 72.5% {
+      -webkit-transform: translateZ(-200px) rotateY(-240deg);
+              transform: translateZ(-200px) rotateY(-240deg);
+    }
+    82.5%, 100% {
+      -webkit-transform: translateZ(-200px) rotateY(-360deg);
+              transform: translateZ(-200px) rotateY(-360deg);
+    }
   }
 }

@@ -434,11 +434,13 @@ thead tr:hover {
 .tablinks:hover{
   text-decoration: none;
   border-bottom: solid #666666 1px;
+  color: #875E9E;
   -webkit-animation: scale-up-center 0.4s both;
 	        animation: scale-up-center 0.4s both;
 }
 .tab .active{
   text-decoration: none;
+  color: #875E9E;
   border-bottom: solid #666666 1px;
 }
 .tabcontent {
@@ -524,7 +526,7 @@ thead tr:hover {
   background-repeat: no-repeat;
   background-size: 100%;
   border-radius: 14px;
-  width: 332px;
+  width: 328px;
   min-height: 182px;
 }
 .img-card-03 {
@@ -533,7 +535,7 @@ thead tr:hover {
   background-repeat: no-repeat;
   background-size: 100%;
   border-radius: 14px;
-  width: 332px;
+  width: 328px;
   min-height: 182px;
 }
 .card-gallery {
@@ -556,16 +558,16 @@ button.accordion {
   -moz-border-radius: 35;
   background-color: #ffffff00;
   border-radius: 35px;
-  color: #e34c4c;
+  color: #EEA047;
   font-size: 20px;
   padding: 10px 20px 10px 20px;
-  border: solid #e34c4c 2px;
+  border: solid #EEA047 2px;
   text-decoration: none;
   cursor: pointer;
 }
 button.accordion:hover, button.active {
   opacity: 0.7;
-  background: #e34c4c;
+  background: #EEA047;
   text-decoration: none;
   color: white;
 }
@@ -702,4 +704,27 @@ div.accordion{
 		flex-direction: row;
 		justify-content: space-between;
 	}
+}
+
+@media (max-width: 920px) {
+  .card-gallery-2{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    margin: 5px;
+  }
+  .img-card-01, 
+  .img-card-02, 
+  .img-card-03{
+    max-width: 90%;
+    margin: 0;
+  }
+  #imgDelivery{
+    max-width: 80%;
+  }
+  .tab{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
