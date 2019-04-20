@@ -16,16 +16,16 @@
               alt="logo_mexico"></a>
         </h1>
         <ul class="main-nav">
-          <li><a class="btn-simple" href="index.html">Home</a></li>
-          <li><a class="btn-simple" href="sobre.html">Sobre</a></li>
-          <li><a class="btn-simple" href="contato.html">Contato</a></li>
-          <li><a class="btn-principal" href="menu.html">Cardápio</a></li>
+          <li><a class="btn-simple" id="home" href="index.html">Home</a></li>
+          <li><a class="btn-simple" id="sobre" href="sobre.html">Sobre</a></li>
+          <li><a class="btn-simple" id="contato" href="contato.html">Contato</a></li>
+          <li><a class="btn-principal" id="menu" href="menu.html">Cardápio</a></li>
         </ul>
       </header>
     </div>
     <div class="container">
       <section class="column">
-        <h1 class="titleMenu purple">Nossa História</h1>
+        <h1 class="titleMenu rose">Nossa História</h1>
         <div class="ctn-2">
           <div class="text-sobre"><h2 class="title-md">
             "Desde 1988 seus fundadores nos Estados Unidos da América, vem desenvolvendo técnicas, produzindo e vendendo
@@ -38,7 +38,6 @@
     </div>
     <div class="container">
       <section class="column">
-        <h1 class="titleMenu rose">O Tacos</h1>
         <div class="ctn-2">
           <img class="sobre-1" src="img/logo_tacos_01_4_4.png" width="30%" alt="Tacos">
           <div class="text-sobre">
@@ -89,8 +88,8 @@
   <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript">
-    $(".navbartop a").removeClass("selected");
-    $("#inicio").addClass("selected");
+    $(".main-nav a").removeClass("selected");
+    $("#sobre").addClass("selected");
   </script>
 
 </html>

@@ -163,34 +163,45 @@ a {
 }
 .logo .btn-simple,
 .main-nav .btn-simple {
-	padding: 10px 15px;
+	padding: 5px 15px;
 	text-transform: uppercase;
 	text-align: center;
 	display: block;
 }
 .main-nav .btn-simple {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  border: 2px solid  #ffffff;
+  color: #ffffff;
+  margin-left: 5px;
 	color: #875E9E;
 	font-size: .99em;
-}
-.main-nav .btn-simple:hover {
-	color: #914A91;
 }
 .main-nav .btn-principal {
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
+  border: 2px solid #875E9E;
   color: #ffffff;
   background: #875E9E;
-	padding: 10px 15px;
+  padding: 5px 15px;
+  margin-left: 5px;
 	text-transform: uppercase;
 	text-align: center;
 	display: block;
   text-decoration: none;
 }
-.btn-principal:hover {
-  background: #914A91;
-  text-decoration: none;
-  color: #ffffff;
+.main-nav .btn-simple:hover, 
+.btn-principal:hover, 
+.btn-principal.selected,
+.btn-simple.selected {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  border: 2px solid #875E9E;
+  color:#875E9E;
+  background: transparent;
 }
 .header {
 	padding-top: 0;

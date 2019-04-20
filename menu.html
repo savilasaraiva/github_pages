@@ -16,10 +16,10 @@
               alt="logo_mexico"></a>
         </h1>
         <ul class="main-nav">
-          <li><a class="btn-simple" href="index.html">Home</a></li>
-          <li><a class="btn-simple" href="sobre.html">Sobre</a></li>
-          <li><a class="btn-simple" href="contato.html">Contato</a></li>
-          <li><a class="btn-principal" href="menu.html">Cardápio</a></li>
+          <li><a class="btn-simple" id="home" href="index.html">Home</a></li>
+          <li><a class="btn-simple" id="sobre" href="sobre.html">Sobre</a></li>
+          <li><a class="btn-simple" id="contato" href="contato.html">Contato</a></li>
+          <li><a class="btn-principal" id="menu" href="menu.html">Cardápio</a></li>
         </ul>
       </header>
     </div>
@@ -928,8 +928,8 @@
   <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript">
-    $(".navbartop a").removeClass("selected");
-    $("#inicio").addClass("selected");
+    $(".main-nav a").removeClass("selected");
+    $("#menu").addClass("selected");
     tabs = document.getElementsByClassName("tabcontent");
     tabs[0].style.display = "block";
   </script>
