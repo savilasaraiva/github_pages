@@ -33,7 +33,10 @@
   margin: 0;
   padding: 0;
 }
-
+.textSlide {
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
 .icon-cards__item:nth-child(1) {
   background-image: url(../img/img_03.jpg);
   background-position: center center;
@@ -93,3 +96,4 @@
             transform: translateZ(-1000px) rotateY(-360deg);
   }
 }
+

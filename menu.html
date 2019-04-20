@@ -4,279 +4,934 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pizza</title>
+    <title>Tacos</title>
     <link href="css/main.css" rel="stylesheet" />
+    <link href="css/slide.css" rel="stylesheet" />
   </head>
 
   <body>
-    <div id="img-menu">
-      <div class="navbar-inicial">
-        <img class="bloco-img" src="img/logo_pizza_03.png" alt="logo_pizza">
-        <div class="navbar">
-          <a id="inicio" href="index.html">Início</a>
-          <a id="menu" href="menu.html">Menu</a>
-          <a id="servico" href="servicos.html">Serviços</a>
-          <a id="sobre" href="sobre.html">Sobre</a>
-        </div>
-      </div>
-      <div class="header">
-        <h1>Menu</h1>
-      </div>
+    <div class="container-top">
+      <header class="header">
+        <h1 class="logo"><a class="btn-simple" href="index.html"><img src="img/logo_tacos_01_4_3.png"
+              alt="logo_mexico"></a>
+        </h1>
+        <ul class="main-nav">
+          <li><a class="btn-simple" href="index.html">Home</a></li>
+          <li><a class="btn-simple" href="sobre.html">Sobre</a></li>
+          <li><a class="btn-simple" href="contato.html">Contato</a></li>
+          <li><a class="btn-principal" href="menu.html">Cardápio</a></li>
+        </ul>
+      </header>
     </div>
-
-    <div class="row">
-      <div class="col-12 col-s-12">
-        <div class="col-12 col-s-12 card-3 menu-card">
-          <h1>Pizzas Tradicionais</h1>
-          <div class="col-4 col-s-12">
-            <h4>Pizza Italiana</h4>
-            <div class="item-menu">
-              <div><img class="img" src="./img/pizza-1.jpg" alt="Italian Pizza" /></div>
-              <div>
-                <h4>Ingredientes</h4>
-                <ul>
-                  <li>Filés de aliche italiano</li>
-                  <li>Molho de Tomate</li>
-                </ul>
+    <div class="container">
+      <section class="column">
+        <h1 class="titleMenu rose">Cardápio</h1>
+        <p class="title-md rose text-left"></p>
+        <div class="tab">
+          <a class="tablinks active" onclick="openPratos(event, 'pratosCarte')">Pratos à la carte</a>
+          <a class="tablinks" onclick="openPratos(event, 'saboresMexico')">Sabores do México</a>
+          <a class="tablinks" onclick="openPratos(event, 'bebidas')">Bebidas</a>
+          <a class="tablinks" onclick="openPratos(event, 'delivery')">Cardápio Delivery</a>
+        </div>
+        <div id="pratosCarte" class="tabcontent">
+          <p>Pratos diversificados e variados da gastronomia mexicana</p>
+          <div class="ctn-2">
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_01.png" alt="Torticado">
+                <div class="overlay">
+                  <p class="descript">Tortilla de milho crocante (taco shell) recheada com proteína de soja refogada
+                    com
+                    cubinhos de berinjela e abobrinha, servido com alface e com ou sem sour cream.
+                  </p>
+                </div>
+              </div>
+              <h4 class="name">Tostitacos</h4>
+              <p class="price">28.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_02.png" alt="Tostitacos de Carne">
+                <div class="overlay">
+                  <p class="descript">Tortillas de milho crocante (formato shell) recheada com carne moída, bacon,
+                    cebola
+                    e
+                    milho verde, tudo isto é refogado e flambado na wok e por fim misturado com grãos de feijão preto.
+                    Coberto com alface e
+                    adereço especial de chipotle. Porção de três unidades acompanha porção pequena de nachos guacamole
+                    e
+                    chilibeans.
+                  </p>
+                </div>
+              </div>
+              <h4 class="name">Tostitacos de Carne</h4>
+              <p class="price">28.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_03.png" alt="Tostada Vegatariana">
+                <div class="overlay">
+                  <p class="descript">
+                    Tortilla de milho em formato redondo, recheada com uma leve camada de pasta de feijão, picadillo de
+                    proteína de soja,
+                    temperada e refogada com especiarias, molho de tomate natural, abobrinha e cenoura em cubinhos
+                    levemente picantes.
+                  </p>
+                </div>
+              </div>
+              <h4 class="name">Tostada Vegatariana</h4>
+              <p class="price">26.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_04.png" alt="Tostada de Tinga">
+                <div class="overlay">
+                  <p class="descript">Tortilla de milho em formato redondo, com uma leve camada de pasta de feijão e
+                    cobertas de tinga (frango desﬁado com
+                    cebola temperado com chipotle) creme de leite e queijo.
+                  </p>
+                </div>
+              </div>
+              <h4 class="name">Tostada de Tinga</h4>
+              <p class="price">26.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_05.png" alt="Tostada de Picadillo">
+                <div class="overlay">
+                  <p class="descript">
+                    Tortilla de milho em formato redondo, com uma leve camada de pasta de feijão e cobertas com
+                    picadillo (carne moída,
+                    tomate batata em pedaços levemente apimentada) creme leite e queijo.
+                  </p>
+                </div>
+              </div>
+              <h4 class="name">Tostada de Picadillo</h4>
+              <p class="price">26.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_06.png" alt="Tacos al Pastor">
+                <div class="overlay">
+                  <p class="descript">
+                    Filetes de lombo suíno previamente marinados com especiarias mexicanas, assado ao calor das brasas
+                    lentamente no espeto
+                    na posição vertical e servido em tortillas de milho, cobertos com uma porção leve de coentro, cebola
+                    e abacaxi. Porção
+                    de quatro unidades.
+                  </p>
+                </div>
+              </div>
+              <h4 class="name">Tacos al Pastor</h4>
+              <p class="price">25.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_07.png" alt="Taco Sinaloense Vegetariano">
+                <div class="overlay">
+                  <p class="descript">
+                    Tortilla de trigo recheada com Tomate, champignon, cebola, coentro e cebola roxa temperada.
+                  </p>
+                </div>
+              </div>
+              <h4 class="name">Taco Sinaloense Vegetariano</h4>
+              <p class="price">28.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_08.png" alt="Taco Sinaloense de Frango">
+                <div class="overlay">
+                  <p class="descript">
+                    Tortilla de trigo recheada com frango, queijo, champignon e cebola roxa temperada. Acompanha uma
+                    porção pequena de
+                    nachos, guacamole e chillibeans.
+                  </p>
+                </div>
+              </div>
+              <h4 class="name">Taco Sinaloense de Frango</h4>
+              <p class="price">25.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_09.png" alt="Taco Sinaloense de Carne">
+                <div class="overlay">
+                  <p class="descript">
+                    Tortilla de trigo recheada com ﬁlé de carne bovina, queijo, champignon e cebola roxa temperada.
+                    Acompanha uma porção
+                    pequena de nachos, guacamole e chillibeans.
+                  </p>
+                </div>
+              </div>
+              <h4 class="name">Taco Sinaloense de Carne</h4>
+              <p class="price">25.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_10.png" alt="Quesadilha Vegetariana">
+                <div class="overlay">
+                  <p class="descript">
+                    Duas tortillas de trigo recheadas com queijo mussarela, cogumelo, coentro e milho. Acompanha uma
+                    porção pequena de
+                    nachos, guacamole e chillibeans.
+                  </p>
+                </div>
+              </div>
+              <h4 class="name">Quesadilha Vegetariana</h4>
+              <p class="price">28.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="ctn-2">
+              <div class="card-gallery">
+                <div class="img-over">
+                  <img src="img/p_img_11.png" alt="Quesadilha de Queijo">
+                  <div class="overlay">
+                    <p class="descript">
+                      Duas tortillas de trigo recheadas com queijo mussarela. Acompanha uma porção pequena de nachos,
+                      guacamole e chillibeans.
+                    </p>
+                  </div>
+                </div>
+                <h4 class="name">Quesadilha de Queijo</h4>
+                <p class="price">28.96 R$</p>
+                <button>Adicionar ao Pedido</button>
+              </div>
+              <div class="card-gallery">
+                <div class="img-over">
+                  <img src="img/p_img_12.png" alt="Quesadilha de Frango">
+                  <div class="overlay">
+                    <p class="descript">
+                      Duas tortillas de trigo recheadas com queijo e frango desﬁado temperado. Acompanha uma porção
+                      pequena de nachos,
+                      guacamole e chillibeans.
+                    </p>
+                  </div>
+                </div>
+                <h4 class="name">Quesadilha de Frango</h4>
+                <p class="price">28.96 R$</p>
+                <button>Adicionar ao Pedido</button>
+              </div>
+              <div class="card-gallery">
+                <div class="img-over">
+                  <img src="img/p_img_13.png" alt="Quesadilla de Carne">
+                  <div class="overlay">
+                    <p class="descript">
+                      Duas tortillas de trigo recheadas com queijo e carne bovina desﬁada e temperada. Acompanha uma
+                      porção pequena de nachos,
+                      guacamole e chillibeans.
+                    </p>
+                  </div>
+                </div>
+                <h4 class="name">Quesadilla de Carne</h4>
+                <p class="price">28.96 R$</p>
+                <button>Adicionar ao Pedido</button>
+              </div>
+              <div class="card-gallery">
+                <div class="img-over">
+                  <img src="img/p_img_14.png" alt="Nachos">
+                  <div class="overlay">
+                    <p class="descript">
+                      Salgadinhos crocantes feitos de milho em formato triangular. Acompanha guacamole (molho feito com
+                      abacate) e frijoles
+                      refritos (feijão amassado temperado com pimenta e calabresa defumada).
+                    </p>
+                  </div>
+                </div>
+                <h4 class="name">Nachos</h4>
+                <p class="price">28.96 R$</p>
+                <button>Adicionar ao Pedido</button>
+              </div>
+              <div class="card-gallery">
+                <div class="img-over">
+                  <img src="img/p_img_15.png" alt="Molcajete Vegetariano">
+                  <div class="overlay">
+                    <p class="descript">T
+                      Shitake fatiado com cebola, pimentão vermelho, cubinhos de abobrinha e palmito grelhados com o
+                      tempero da casa, servido
+                      em uma pedra vulcânica estupidamente quente. Acompanha seis tortillas de trigo ou milho. *Opção
+                      com queijo e sem queijo.
+                    </p>
+                  </div>
+                </div>
+                <h4 class="name">Molcajete Vegetariano</h4>
+                <p class="price">49.96 R$</p>
+                <button>Adicionar ao Pedido</button>
+              </div>
+              <div class="card-gallery">
+                <div class="img-over">
+                  <img src="img/p_img_16.png" alt="Molcajete Tradicional">
+                  <div class="overlay">
+                    <p class="descript">
+                      Cubinhos de alcatra e ﬁlé de frango grelhados com cebola, pimentão e queijo granado. Tudo isto é
+                      servido em uma pedra
+                      vulcânica estupidamente quente. Acompanha seis tortillas de trigo, guacamole e frijoles refritos.
+                      Porção para 3 pessoas.
+                    </p>
+                  </div>
+                </div>
+                <h4 class="name">Molcajete Tradicional</h4>
+                <p class="price">49.96 R$</p>
+                <button>Adicionar ao Pedido</button>
+              </div>
+              <div class="card-gallery">
+                <div class="img-over">
+                  <img src="img/p_img_17.png" alt="Flautas">
+                  <div class="overlay">
+                    <p class="descript">
+                      Tortilla de milho crocante enrolada e recheada de frango desﬁado temperado, com cobertura de creme
+                      de leite, guacamole e
+                      queijo. Acompanha uma porção extra pequena de nachos, guacamole e chillibeans.
+                    </p>
+                  </div>
+                </div>
+                <h4 class="name">Flautas</h4>
+                <p class="price">28.96 R$</p>
+                <button>Adicionar ao Pedido</button>
+              </div>
+              <div class="card-gallery">
+                <div class="img-over">
+                  <img src="img/p_img_18.png" alt="Flautas de Papa">
+                  <div class="overlay">
+                    <p class="descript">
+                      Tortilha de milho crocante enrolada e recheada com batata amassada, temperada com cheiro verde,
+                      cebola e lascas de
+                      azeitona . *Opção com cobertura de sour cream e queijo.
+                    </p>
+                  </div>
+                </div>
+                <h4 class="name">Flautas de Papa</h4>
+                <p class="price">28.96 R$</p>
+                <button>Adicionar ao Pedido</button>
+              </div>
+              <div class="card-gallery">
+                <div class="img-over">
+                  <img src="img/p_img_19.png" alt="Enchilada">
+                  <div class="overlay">
+                    <p class="descript">
+                      Três tortillas recheadas com frango, coberta com molho verde (tomate verde e jalapeños), creme de
+                      leite, cebola, queijo
+                      e gergelim. Acompanha uma porção pequena de nachos, guacamole e chillibeans.
+                    </p>
+                  </div>
+                </div>
+                <h4 class="name">Enchilada</h4>
+                <p class="price">15.96 R$</p>
+                <button>Adicionar ao Pedido</button>
+              </div>
+              <div class="card-gallery">
+                <div class="img-over">
+                  <img src="img/p_img_20.png" alt="Burrito Vegetariano">
+                  <div class="overlay">
+                    <p class="descript">
+                      Tortilla de trigo (em formato wraps) recheada de pasta de feijão, queijo, tomate, cebola e
+                      pimentão. Acompanha uma
+                      porção pequena de nachos, guacamole e chillibeans.
+                    </p>
+                  </div>
+                </div>
+                <h4 class="name">Burrito Vegetariano</h4>
+                <p class="price">28.96 R$</p>
+                <button>Adicionar ao Pedido</button>
+              </div>
+              <div class="card-gallery">
+                <div class="img-over">
+                  <img src="img/p_img_21.png" alt="Burrito de Shimeji">
+                  <div class="overlay">
+                    <p class="descript">
+                      Tortilla de trigo em formato wraps recheada com shimeji fatiado e cebola roxa temperada, com um
+                      leve toque de shoyo e
+                      tempero da casa. *Opção com queijo e sem queijo.
+                    </p>
+                  </div>
+                </div>
+                <h4 class="name">Burrito de Shimeji</h4>
+                <p class="price">28.96 R$</p>
+                <button>Adicionar ao Pedido</button>
+              </div>
+              <div class="card-gallery">
+                <div class="img-over">
+                  <img src="img/p_img_22.png" alt="Burrito de Frango">
+                  <div class="overlay">
+                    <p class="descript">
+                      Tortilla de trigo (em formato wraps) recheada de pasta de feijão, queijo, frango desﬁado e
+                      temperado levemente
+                      apimentado. Acompanha uma porção pequena de nachos, guacamole e chillibeans.
+                    </p>
+                  </div>
+                </div>
+                <h4 class="name">Burrito de Frango</h4>
+                <p class="price">28.96 R$</p>
+                <button>Adicionar ao Pedido</button>
+              </div>
+              <div class="card-gallery">
+                <div class="img-over">
+                  <img src="img/p_img_23.png" alt="Burrito de Carne">
+                  <div class="overlay">
+                    <p class="descript">
+                      Tortilla de trigo (em formato wraps) recheada de pasta de feijão, queijo, carne bovina desﬁada e
+                      temperada. Acompanha
+                      uma porção pequena de nachos, guacamole e chillibeans.
+                    </p>
+                  </div>
+                </div>
+                <h4 class="name">Burrito de Carne</h4>
+                <p class="price">28.96 R$</p>
+                <button>Adicionar ao Pedido</button>
               </div>
             </div>
-            <p>R$15,00</p>
-            <button class="button confirm">Adicionar ao Pedido</button>
           </div>
-          <div class="col-4 col-s-12">
-            <h4>Pizza Grega</h4>
-            <div class="item-menu">
-              <div><img class="img" src="./img/pizza-2.jpg" alt="Greak Pizza" /></div>
-              <div>
-                <h4>Ingredientes</h4>
-                <ul>
-                  <li>Calabresa artesanal em fatias</li>
-                  <li>Cebola</li>
-                  <li>Azeitonas pretas</li>
-                </ul>
+          <button data-text-swap="Ver Menos" class="accordion">Ver Mais</button>
+        </div>
+        <div id="saboresMexico" class="tabcontent">
+          <p>Igredientes típicos da iguaria mexicana</p>
+          <div class="ctn-2">
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_24.png" alt="Tlacoyos de Gringa">
+                <div class="overlay">
+                  <p class="descript">
+                    Massa de milho crocante, recheada com feijão temperado, coberto com guacamole, carne al pastor,
+                    queijo gratinado,
+                    pedacinhos de abacaxi grelhado, cebola roxa temperada e uma pitada de coentro.
+                  </p>
+                </div>
+              </div>
+              <h4 class="name">Tlacoyos de Gringa</h4>
+              <p class="price">28.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_25.png" alt="Tlacoyo de Bistec">
+                <div class="overlay">
+                  <p class="descript">
+                    Massa de milho crocante, recheada com feijão temperado, coberto com guacamole, pedacinhos de alcatra
+                    grelhada, queijo
+                    gratinado, cebola roxa temperada, creme de leite e uma pitada de coentro.
+                  </p>
+                </div>
+              </div>
+              <h4 class="name">Tlacoyo de Bistec</h4>
+              <p class="price">28.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_26.png" alt="Taco de Chicharrón en salsa verde">
+                <div class="overlay">
+                  <p class="descript">
+                    Pururucas de suíno ao molho de pimenta jalapeño, Porção de 2 unidades. Acompanha uma porção extra
+                    pequena de nachos,
+                    guacamole e chillibeans.
+                  </p>
+                </div>
+              </div>
+              <h4 class="name">Taco de Chicharrón en salsa verde</h4>
+              <p class="price">28.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_27.png" alt="Taco de Carnitas">
+                <div class="overlay">
+                  <p class="descript">
+                    Carne suína preparada e maturada por 4 horas, cozida num tacho de cobre do jeito “michoacano”,
+                    acompanhado de cebola,
+                    coentro e molho de pimenta. Acompanha uma porção pequena de nachos, guacamole e chillibeans.
+                  </p>
+                </div>
+              </div>
+              <h4 class="name">Taco de Carnitas</h4>
+              <p class="price">28.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_28.png" alt="Taco de Bistec sem queijo">
+                <div class="overlay">
+                  <p class="descript">
+                    Tortillas pequenas de milho, recheadas com pedacinhos de carne bovina, cebola roxa temperada e
+                    coentro. Porção de quatro
+                    unidades. Acompanhamentos: limão, guacamole (porcão pequena) ou salsa mexicana (porcão pequena).
+                  </p>
+                </div>
+              </div>
+              <h4 class="name">Taco de Bistec sem queijo</h4>
+              <p class="price">28.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_29.png" alt="Taco de Bistec com queijo">
+                <div class="overlay">
+                  <p class="descript">
+                    Tortillas pequenas de milho, recheadas com pedacinhos de carne bovina, queijo granado, cebola roxa
+                    temperada e coentro.
+                    Porção de quatro unidades. Acompanhamentos: limão, guacamole (porcão pequena) ou salsa mexicana
+                    (porção pequena).
+                  </p>
+                </div>
+              </div>
+              <h4 class="name">Taco de Bistec com queijo</h4>
+              <p class="price">28.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_30.png" alt="Enchiladas de Mole Oaxaqueño">
+                <div class="overlay">
+                  <p class="descript">
+                    Tortillas de milho recheadas de frango desﬁado, cobertas de mole oaxaqueño, creme de leite, gergelim
+                    e queijo.
+                  </p>
+                </div>
+              </div>
+              <h4 class="name">Enchiladas de Mole Oaxaqueño</h4>
+              <p class="price">29.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_31.png" alt="Caldo Tlalpeño">
+                <div class="overlay">
+                  <p class="descript">
+                    Caldo de frango com legumes, pimenta chipotle, queijo, cebola e coentro.
+                  </p>
+                </div>
+              </div>
+              <h4 class="name">Caldo Tlalpeño</h4>
+              <p class="price">26.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+          </div>
+        </div>
+        <div id="bebidas" class="tabcontent">
+          <p>Divirta-se e refreque-se</p>
+          <div class="ctn-2">
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_32.png" alt="Paloma Blanca">
+              </div>
+              <h4 class="name">Paloma Blanca</h4>
+              <p class="price">24.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_33.png" alt="Mojito">
+              </div>
+              <h4 class="name">Mojito</h4>
+              <p class="price">16.00 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_34.png" alt="Michelada Cubana">
+              </div>
+              <h4 class="name">Michelada Cubana</h4>
+              <p class="price">16.00 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_35.png" alt="Michelada Clássica">
+              </div>
+              <h4 class="name">Michelada Clássica</h4>
+              <p class="price">15.00 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_36.png" alt="Matador">
+              </div>
+              <h4 class="name">Matador</h4>
+              <p class="price">25.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_37.png" alt="Margarita Tradicional">
+              </div>
+              <h4 class="name">Margarita Tradicional</h4>
+              <p class="price">27.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_38.png" alt="Margarita Cuervo Frozen">
+              </div>
+              <h4 class="name">Margarita Cuervo Frozen</h4>
+              <p class="price">25.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_39.png" alt="José Cuervo Sunrise">
+              </div>
+              <h4 class="name">José Cuervo Sunrise</h4>
+              <p class="price">25.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_40.png" alt="Helado Borracho">
+              </div>
+              <h4 class="name">Helado Borracho</h4>
+              <p class="price">25.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_41.png" alt="Charro Negro">
+              </div>
+              <h4 class="name">Charro Negro</h4>
+              <p class="price">25.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="ctn-2">
+              <div class="card-gallery">
+                <div class="img-over">
+                  <img src="img/p_img_42.png" alt="Cerveja Long Neck Corona">
+                </div>
+                <h4 class="name">Cerveja Long Neck Corona</h4>
+                <p class="price">13.00 R$</p>
+                <button>Adicionar ao Pedido</button>
+              </div>
+              <div class="card-gallery">
+                <div class="img-over">
+                  <img src="img/p_img_43.png" alt="Água de Tamarindo">
+                </div>
+                <h4 class="name">Água de Tamarindo</h4>
+                <p class="price">15.96 R$</p>
+                <button>Adicionar ao Pedido</button>
+              </div>
+              <div class="card-gallery">
+                <div class="img-over">
+                  <img src="img/p_img_44.png" alt="Água de Jamaica">
+                </div>
+                <h4 class="name">Água de Jamaica</h4>
+                <p class="price">15.96 R$</p>
+                <button>Adicionar ao Pedido</button>
               </div>
             </div>
-            <p>R$15,00</p>
-            <button class="button confirm">Adicionar ao Pedido</button>
           </div>
-          <div class="col-4 col-s-12">
-            <h4>Pizza Portuguesa</h4>
-            <div class="item-menu">
-              <div><img class="img" src="./img/pizza-3.jpg" alt="Caucasian Pizza" /></div>
-              <div>
-                <h4>Ingredientes</h4>
-                <ul>
-                  <li>Presunto</li>
-                  <li>Ovos cozidos</li>
-                  <li>Cebola</li>
-                  <li>Azeitonas pretas</li>
-                </ul>
+          <button data-text-swap="Ver Menos" class="accordion">Ver Mais</button>
+        </div>
+        <div id="delivery" class="tabcontent">
+          <p>Confira o carpádio para entrega rápida</p>
+          <div class="ctn-2">
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_06.png" alt="Tacos al Pastor">
+                <div class="overlay">
+                  <p class="descript">
+                    Filetes de lombo suíno previamente marinados com especiarias mexicanas, assado ao calor das brasas
+                    lentamente no espeto
+                    na posição vertical e servido em tortillas de milho, cobertos com uma porção leve de coentro, cebola
+                    e abacaxi. Porção
+                    de quatro unidades.
+                  </p>
+                </div>
+              </div>
+              <h4 class="name">Tacos al Pastor</h4>
+              <p class="price">25.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_08.png" alt="Taco Sinaloense de Frango">
+                <div class="overlay">
+                  <p class="descript">
+                    Tortilla de trigo recheada com frango, queijo, champignon e cebola roxa temperada. Acompanha uma
+                    porção pequena de
+                    nachos, guacamole e chillibeans.
+                  </p>
+                </div>
+              </div>
+              <h4 class="name">Taco Sinaloense de Frango</h4>
+              <p class="price">25.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_09.png" alt="Taco Sinaloense de Carne">
+                <div class="overlay">
+                  <p class="descript">
+                    Tortilla de trigo recheada com ﬁlé de carne bovina, queijo, champignon e cebola roxa temperada.
+                    Acompanha uma porção
+                    pequena de nachos, guacamole e chillibeans.
+                  </p>
+                </div>
+              </div>
+              <h4 class="name">Taco Sinaloense de Carne</h4>
+              <p class="price">25.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_28.png" alt="Taco de Bistec sem queijo">
+                <div class="overlay">
+                  <p class="descript">
+                    Tortillas pequenas de milho, recheadas com pedacinhos de carne bovina, cebola roxa temperada e
+                    coentro. Porção de quatro
+                    unidades. Acompanhamentos: limão, guacamole (porcão pequena) ou salsa mexicana (porcão pequena).
+                  </p>
+                </div>
+              </div>
+              <h4 class="name">Taco de Bistec sem queijo</h4>
+              <p class="price">28.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_29.png" alt="Taco de Bistec com queijo">
+                <div class="overlay">
+                  <p class="descript">
+                    Tortillas pequenas de milho, recheadas com pedacinhos de carne bovina, queijo granado, cebola roxa
+                    temperada e coentro.
+                    Porção de quatro unidades. Acompanhamentos: limão, guacamole (porcão pequena) ou salsa mexicana
+                    (porção pequena).
+                  </p>
+                </div>
+              </div>
+              <h4 class="name">Taco de Bistec com queijo</h4>
+              <p class="price">28.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_10.png" alt="Quesadilha Vegetariana">
+                <div class="overlay">
+                  <p class="descript">
+                    Duas tortillas de trigo recheadas com queijo mussarela, cogumelo, coentro e milho. Acompanha uma
+                    porção pequena de
+                    nachos, guacamole e chillibeans.
+                  </p>
+                </div>
+              </div>
+              <h4 class="name">Quesadilha Vegetariana</h4>
+              <p class="price">28.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_11.png" alt="Quesadilha de Queijo">
+                <div class="overlay">
+                  <p class="descript">
+                    Duas tortillas de trigo recheadas com queijo mussarela. Acompanha uma porção pequena de nachos,
+                    guacamole e chillibeans.
+                  </p>
+                </div>
+              </div>
+              <h4 class="name">Quesadilha de Queijo</h4>
+              <p class="price">28.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_12.png" alt="Quesadilha de Frango">
+                <div class="overlay">
+                  <p class="descript">
+                    Duas tortillas de trigo recheadas com queijo e frango desﬁado temperado. Acompanha uma porção
+                    pequena de nachos,
+                    guacamole e chillibeans.
+                  </p>
+                </div>
+              </div>
+              <h4 class="name">Quesadilha de Frango</h4>
+              <p class="price">28.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_13.png" alt="Quesadilla de Carne">
+                <div class="overlay">
+                  <p class="descript">
+                    Duas tortillas de trigo recheadas com queijo e carne bovina desﬁada e temperada. Acompanha uma
+                    porção pequena de nachos,
+                    guacamole e chillibeans.
+                  </p>
+                </div>
+              </div>
+              <h4 class="name">Quesadilla de Carne</h4>
+              <p class="price">28.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+            <div class="card-gallery">
+              <div class="img-over">
+                <img src="img/p_img_14.png" alt="Nachos">
+                <div class="overlay">
+                  <p class="descript">
+                    Salgadinhos crocantes feitos de milho em formato triangular. Acompanha guacamole (molho feito com
+                    abacate) e frijoles
+                    refritos (feijão amassado temperado com pimenta e calabresa defumada).
+                  </p>
+                </div>
+              </div>
+              <h4 class="name">Nachos</h4>
+              <p class="price">28.96 R$</p>
+              <button>Adicionar ao Pedido</button>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="ctn-2">
+              <div class="card-gallery">
+                <div class="img-over">
+                  <img src="img/p_img_17.png" alt="Flautas">
+                  <div class="overlay">
+                    <p class="descript">
+                      Tortilla de milho crocante enrolada e recheada de frango desﬁado temperado, com cobertura de creme
+                      de leite, guacamole e
+                      queijo. Acompanha uma porção extra pequena de nachos, guacamole e chillibeans.
+                    </p>
+                  </div>
+                </div>
+                <h4 class="name">Flautas</h4>
+                <p class="price">28.96 R$</p>
+                <button>Adicionar ao Pedido</button>
+              </div>
+              <div class="card-gallery">
+                <div class="img-over">
+                  <img src="img/p_img_18.png" alt="Flautas de Papa">
+                  <div class="overlay">
+                    <p class="descript">
+                      Tortilha de milho crocante enrolada e recheada com batata amassada, temperada com cheiro verde,
+                      cebola e lascas de
+                      azeitona . *Opção com cobertura de sour cream e queijo.
+                    </p>
+                  </div>
+                </div>
+                <h4 class="name">Flautas de Papa</h4>
+                <p class="price">28.96 R$</p>
+                <button>Adicionar ao Pedido</button>
+              </div>
+              <div class="card-gallery">
+                <div class="img-over">
+                  <img src="img/p_img_45.png" alt="Churros">
+                  <div class="overlay">
+                    <p class="descript">
+                      Churros com recheio de doce de leite ou nutella com uma camada de granulado de chocolate ou
+                      castanha
+                      de caju.
+                    </p>
+                  </div>
+                </div>
+                <h4 class="name">Churros</h4>
+                <p class="price">8.00 R$</p>
+                <button>Adicionar ao Pedido</button>
+              </div>
+              <div class="card-gallery">
+                <div class="img-over">
+                  <img src="img/p_img_42.png" alt="Cerveja Long Neck Corona">
+                </div>
+                <h4 class="name">Cerveja Long Neck Corona</h4>
+                <p class="price">13.00 R$</p>
+                <button>Adicionar ao Pedido</button>
+              </div>
+              <div class="card-gallery">
+                <div class="img-over">
+                  <img src="img/p_img_21.png" alt="Burrito de Shimeji">
+                  <div class="overlay">
+                    <p class="descript">
+                      Tortilla de trigo em formato wraps recheada com shimeji fatiado e cebola roxa temperada, com um
+                      leve toque de shoyo e
+                      tempero da casa. *Opção com queijo e sem queijo.
+                    </p>
+                  </div>
+                </div>
+                <h4 class="name">Burrito de Shimeji</h4>
+                <p class="price">28.96 R$</p>
+                <button>Adicionar ao Pedido</button>
+              </div>
+              <div class="card-gallery">
+                <div class="img-over">
+                  <img src="img/p_img_22.png" alt="Burrito de Frango">
+                  <div class="overlay">
+                    <p class="descript">
+                      Tortilla de trigo (em formato wraps) recheada de pasta de feijão, queijo, frango desﬁado e
+                      temperado levemente
+                      apimentado. Acompanha uma porção pequena de nachos, guacamole e chillibeans.
+                    </p>
+                  </div>
+                </div>
+                <h4 class="name">Burrito de Frango</h4>
+                <p class="price">28.96 R$</p>
+                <button>Adicionar ao Pedido</button>
+              </div>
+              <div class="card-gallery">
+                <div class="img-over">
+                  <img src="img/p_img_23.png" alt="Burrito de Carne">
+                  <div class="overlay">
+                    <p class="descript">
+                      Tortilla de trigo (em formato wraps) recheada de pasta de feijão, queijo, carne bovina desﬁada e
+                      temperada. Acompanha
+                      uma porção pequena de nachos, guacamole e chillibeans.
+                    </p>
+                  </div>
+                </div>
+                <h4 class="name">Burrito de Carne</h4>
+                <p class="price">28.96 R$</p>
+                <button>Adicionar ao Pedido</button>
+              </div>
+              <div class="card-gallery">
+                <div class="img-over">
+                  <img src="img/p_img_43.png" alt="Água de Tamarindo">
+                </div>
+                <h4 class="name">Água de Tamarindo</h4>
+                <p class="price">15.96 R$</p>
+                <button>Adicionar ao Pedido</button>
+              </div>
+              <div class="card-gallery">
+                <div class="img-over">
+                  <img src="img/p_img_44.png" alt="Água de Jamaica">
+                </div>
+                <h4 class="name">Água de Jamaica</h4>
+                <p class="price">15.96 R$</p>
+                <button>Adicionar ao Pedido</button>
               </div>
             </div>
-            <p>R$15,00</p>
-            <button class="button confirm">Adicionar ao Pedido</button>
           </div>
-          <div class="col-4 col-s-12">
-            <h4>Pizza Americana</h4>
-            <div class="item-menu">
-              <div><img class="img" src="./img/pizza-4.jpg" alt="American Pizza" /></div>
-              <div>
-                <h4>Ingredientes</h4>
-                <ul>
-                  <li>Mussarela</li>
-                  <li>Gorgonzola</li>
-                  <li>Parmesão</li>
-                  <li>Catupiry</li>
-                </ul>
-              </div>
-            </div>
-            <p>R$15,00</p>
-            <button class="button confirm">Adicionar ao Pedido</button>
-          </div>
-          <div class="col-4 col-s-12">
-            <h4>Pizza de Tomate</h4>
-            <div class="item-menu">
-              <div><img class="img" src="./img/pizza-5.jpg" alt="Tomatoe Pie" /></div>
-              <div>
-                <h4>Ingredientes</h4>
-                <ul>
-                  <li>Molho de tomate</li>
-                  <li>Alho cru fatiado</li>
-                  <li>Parmesão</li>
-                  <li>Folhas frescas</li>
-                  <li>Manjericão</li>
-                </ul>
-              </div>
-            </div>
-            <p>R$15,00</p>
-            <button class="button confirm">Adicionar ao Pedido</button>
-          </div>
-          <div class="col-4 col-s-12">
-            <h4>Margherita</h4>
-            <div class="item-menu">
-              <div><img class="img" src="./img/pizza-6.jpg" alt="Margherita" /></div>
-              <div>
-                <h4>Ingredientes</h4>
-                <ul>
-                  <li>Mussarela</li>
-                  <li>Folhas frescas de manjericão</li>
-                </ul>
-              </div>
-            </div>
-            <p>R$15,00</p>
-            <button class="button confirm">Adicionar ao Pedido</button>
-          </div>
-          <div class="col-6 col-s-12">
-            <h4>Bacon Crocante Fina</h4>
-            <div class="item-menu">
-              <div><img class="img" src="./img/pizza-7.jpg" alt="Bacon Pizza" /></div>
-              <div>
-                <h4>Ingredientes</h4>
-                <ul>
-                  <li>Linguiça calabresa artesanal seca</li>
-                  <li>Bacon</li>
-                  <li>Erva-doce fresca</li>
-                </ul>
-              </div>
-            </div>
-            <p>R$15,00</p>
-            <button class="button confirm">Adicionar ao Pedido</button>
-          </div>
-          <div class="col-6 col-s-12">
-            <h4>Especial Havaiana</h4>
-            <div class="item-menu">
-              <div><img class="img" src="./img/pizza-8.jpg" alt="Hawaiian Special" /></div>
-              <div>
-                <h4>Ingredientes</h4>
-                <ul>
-                  <li>Mussarela</li>
-                  <li>Cogumelos shitake</li>
-                  <li>Fatias de cebola roxa</li>
-                  <li>Salsinha</li>
-                </ul>
-              </div>
-            </div>
-            <p>R$15,00</p>
-            <button class="button confirm">Adicionar ao Pedido</button>
-          </div>
+          <button data-text-swap="Ver Menos" class="accordion">Ver Mais</button>
         </div>
-      </div>
-      <div class="col-12 col-s-12 card-3 menu-card">
-        <h1>Drinks</h1>
-        <div class="col-4 col-s-6">
-          <h4>Suco de Limão</h4>
-          <div class="item-menu">
-            <img class="img" src="./img/drink-1.jpg" alt="
-Lemonade Juice" />
-          </div>
-          <p>R$12,90</p>
-          <button class="button confirm">Adicionar ao Pedido</button>
-        </div>
-        <div class="col-4 col-s-6">
-          <h4>Suco de Abacaxi</h4>
-          <div class="item-menu">
-            <img class="img" src="./img/drink-2.jpg" alt="Pineapple Juice" />
-          </div>
-          <p>R$12,90</p>
-          <button class="button confirm">Adicionar ao Pedido</button>
-        </div>
-        <div class="col-4 col-s-6">
-          <h4>Refigerante Soda</h4>
-          <div class="item-menu">
-            <img class="img" src="./img/drink-3.jpg" alt="
-        Soda Drinks" />
-          </div>
-          <p>R$12,90</p>
-          <button class="button confirm">Adicionar ao Pedido</button>
-        </div>
-        <div class="col-4 col-s-6">
-          <h4>Champanhe</h4>
-          <div class="item-menu">
-            <img class="img" src="./img/drink-4.jpg" alt="
-        Champanhe" />
-          </div>
-          <p>R$12,90</p>
-          <button class="button confirm">Adicionar ao Pedido</button>
-        </div>
-      </div>
-      <div class="col-12 col-s-12 card-3 menu-card">
-        <h1>Ambúrguer</h1>
-        <div class="col-4 col-s-6">
-          <h4>Ambúrguer de Carne c/ queijo</h4>
-          <div class="item-menu">
-            <img class="img" src="./img/burger-1.jpg" alt="
-            Ambúrguer Carne e Queijo" />
-          </div>
-          <p>R$14,70</p>
-          <button class="button confirm">Adicionar ao Pedido</button>
-        </div>
-        <div class="col-4 col-s-6">
-          <h4>Ambúrguer de Carne</h4>
-          <div class="item-menu">
-            <img class="img" src="./img/burger-2.jpg" alt="
-                      Ambúrguer Carne" />
-          </div>
-          <p>R$13,70</p>
-          <button class="button confirm">Adicionar ao Pedido</button>
-        </div>
-        <div class="col-4 col-s-6">
-          <h4>Ambúrguer de Carne acompanha batata frita</h4>
-          <div class="item-menu">
-            <img class="img" src="./img/burger-3.jpg" alt="
-                      Ambúrguer Carne" />
-          </div>
-          <p>R$15,00</p>
-          <button class="button confirm">Adicionar ao Pedido</button>
-        </div>
-      </div>
-      <div class="col-12 col-s-12 card-3 menu-card">
-        <h1>Massas</h1>
-        <div class="col-4 col-s-6">
-          <h4>Macarrão ao Molho de Tomate</h4>
-          <div class="item-menu">
-            <img class="img" src="./img/pasta-1.jpg" alt="
-      Maacarrão Tomate" />
-          </div>
-          <p>R$20,00</p>
-          <button class="button confirm">Adicionar ao Pedido</button>
-        </div>
-        <div class="col-4 col-s-6">
-          <h4>Macarrão à Moda da Casa</h4>
-          <div class="item-menu">
-            <img class="img" src="./img/pasta-2.jpg" alt="Pineapple Juice" />
-          </div>
-          <p>R$18,50</p>
-          <button class="button confirm">Adicionar ao Pedido</button>
-        </div>
-        <div class="col-4 col-s-6">
-          <h4>Macarrão ao molho de carne</h4>
-          <div class="item-menu">
-            <img class="img" src="./img/pasta-3.jpg" alt="
-              Soda Drinks" />
-          </div>
-          <p>R$21,50</p>
-          <button class="button confirm">Adicionar ao Pedido</button>
-        </div>
-      </div>
+      </section>
     </div>
-
-    <div class="smoothscroll-top">
-      <span class="scroll-top-inner">
-        <i class="icon-arrow"><img src="img/arrow_01.png" width="80%"></i>
-      </span>
-    </div>
-
-    <div class="footer">
-      <p>
-        <a href="#">Copyright © 2019 Todos os direitos reservados | Este modelo é feito por Sávila Saraiva</a>
-      </p>
+    <div class="container-bottom">
+      <div class="footer">
+        <div>Copyright © 2019</div>
+        <div>Feito com ❤ por Sávila Saraiva</div>
+        <div class="social-media">
+          <a href="#">
+            <div class="icon-social-media face"></div>
+          </a>
+          <a href="#">
+            <div class="icon-social-media insta"></div>
+          </a>
+          <a href="#">
+            <div class="icon-social-media twitter"></div>
+          </a>
+        </div>
+      </div>
     </div>
   </body>
   <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript">
-    $(".navbar a").removeClass("selected");
-    $("#menu").addClass("selected");
+    $(".navbartop a").removeClass("selected");
+    $("#inicio").addClass("selected");
+    tabs = document.getElementsByClassName("tabcontent");
+    tabs[0].style.display = "block";
   </script>
 
 </html>
