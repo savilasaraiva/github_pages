@@ -747,4 +747,7 @@ div.accordion{
     margin: 0;
     padding: 0;
   }
+  .footer{
+    flex-direction: column;
+  }
 }
