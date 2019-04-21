@@ -742,7 +742,7 @@ div.accordion{
     flex-wrap: wrap;
     margin-bottom: 40px;
   }
-  .icon-social-media{
+  a.rc{
     margin: 0;
   }
   .social-media{
