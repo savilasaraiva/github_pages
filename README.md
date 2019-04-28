@@ -1,3 +1,3 @@
-# Project WEB - github_pages
+# Mero - Sushi Bar
 
-https://savilasaraiva.github.io/github_pages/
+https://edvaljunior.github.io/mero_sushibar/
